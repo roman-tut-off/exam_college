@@ -1,16 +1,24 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+"""" Функция принимает число и возвращает сумму цифр  """
+def sum_digit(number):
+    try:
+        number = int(number)
+        sum = 0
+        while number > 0:
+            sum += number % 10
+            number = number // 10
+        return sum
+    except:
+        raise TypeError('Type Error. Input is not int')
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    # print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-    print(f'Hello, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-# Press the green button in the gutter to run the script.
+"""" Вызов функции сложения чисел """
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    res = input('Введите число: ')
+    res = sum_digit(res)
+    print(res)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+
