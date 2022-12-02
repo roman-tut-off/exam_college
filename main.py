@@ -17,7 +17,9 @@ def sum_digit(number):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    res = sum_digit(input())
+    res = input('Введите число: ')
+
+    res = sum_digit(res)
     print(f'Ответ: {res}')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
