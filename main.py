@@ -7,14 +7,19 @@
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
+    res = sum_digit(input())
+    print(f'Ответ: {res}')
 
 def sum_digit(number):
-    sum = 0
-    while number > 0:
-        sum += number % 10
-        number = number // 10
-    return sum
+    try:
+        number = int(number)
+        sum = 0
+        while number > 0:
+            sum += number % 10
+            number = number // 10
+        return sum
+    except:
+        raise TypeError('Type Error. Input is not int')
 
 
 # Press the green button in the gutter to run the script.
