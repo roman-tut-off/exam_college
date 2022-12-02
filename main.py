@@ -1,7 +1,4 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 """" Функция принимает число и возвращает сумму цифр  """
 def sum_digit(number):
     try:
@@ -14,8 +11,6 @@ def sum_digit(number):
     except:
         raise TypeError('Type Error. Input is not int')
 
-
-# Press the green button in the gutter to run the script.
 
 """" Вызов функции сложения чисел """
 if __name__ == '__main__':
